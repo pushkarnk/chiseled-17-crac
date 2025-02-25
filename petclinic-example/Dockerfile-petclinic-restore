@@ -1,4 +1,4 @@
-FROM crac-17-checkpoint
+FROM crac-17-chiseled
 
 COPY snapshot /home/app/snapshot
 COPY target/spring-petclinic-3.4.0-SNAPSHOT.jar /home/app/target/spring-petclinic-3.4.0-SNAPSHOT.jar
