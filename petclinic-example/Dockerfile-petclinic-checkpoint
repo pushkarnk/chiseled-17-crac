@@ -1,0 +1,7 @@
+FROM crac-17-checkpoint
+
+COPY target/spring-petclinic-3.4.0-SNAPSHOT.jar /home/app/target/spring-petclinic-3.4.0-SNAPSHOT.jar
+WORKDIR /home/app
+
+CMD ["-XX:CRaCCheckpointTo=/home/app/snapshot", "-jar", "/home/app/target/spring-petclinic-3.4.0-SNAPSHOT.jar"]
+
